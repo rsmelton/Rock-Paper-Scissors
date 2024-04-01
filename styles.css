@@ -1,0 +1,51 @@
+body {
+    background-color: #ccc;
+}
+
+.selections {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.selection {
+    width: 150px;
+    height: 100px;
+    font-size: 4rem;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+.selection:hover {
+    transform: scale(1.2);
+}
+
+/* fr stands for fraction unit meaning a fraction of the space
+    is being used dependent on as to how much space you give*/
+.results {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.result-score {
+    margin-left: .1rem;
+    font-size: .5rem;
+    color: #333;
+}
+
+.result-selection {
+    margin-top: 1rem;
+    opacity: .5;
+    font-size: 3rem;
+}
+
+.result-selection.winner {
+    opacity: 1;
+    font-size: 4.5rem;
+}
